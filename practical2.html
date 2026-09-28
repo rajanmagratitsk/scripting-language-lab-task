@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Even Numbers</title>
+</head>
+<body>
+
+<script>
+    function sumEvenNumbers(arr) {
+        let sum = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                sum = sum + arr[i];
+            }
+        }
+
+        return sum;
+    }
+
+    let numbers = [1, 2, 3, 4, 5, 6, 8];
+
+    let result = sumEvenNumbers(numbers);
+
+    document.write("Array: " + numbers + "<br>");
+    document.write("Sum of even numbers: " + result);
+</script>
+
+</body>
+</html>
